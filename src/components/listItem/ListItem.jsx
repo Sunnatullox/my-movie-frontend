@@ -48,9 +48,8 @@ const ListItem = ({ index, item }) => {
     }
   };
 
-  if(isHovered){
-    return handlePlayMove();
-  }
+  {isHovered && handlePlayMove()}
+
   
 
   return (
