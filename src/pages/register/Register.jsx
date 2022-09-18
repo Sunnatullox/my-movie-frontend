@@ -160,7 +160,7 @@ const Register = () => {
             <video
               className="video"
               controls
-              src="https://rr7---sn-cxaaj5o5q5-t0a6.googlevideo.com/videoplayback?expire=1663262770&ei=0QsjY8KfMcaE8wTbgYfQAQ&ip=69.157.180.78&id=o-AOIgZfZVcFzrIBLQWUgm5puLbeMm3Ex9U7o5I02wZGSX&itag=22&source=youtube&requiressl=yes&mh=PM&mm=31%2C26&mn=sn-cxaaj5o5q5-t0a6%2Csn-vgqskned&ms=au%2Conr&mv=m&mvi=7&pcm2cms=yes&pl=24&initcwndbps=1488750&spc=yR2vp2K8pNmkS5L8sv9CznzG42dEQIg&vprv=1&mime=video%2Fmp4&ns=8f_cQiHCi9hk69EqSJBS6EgI&cnr=14&ratebypass=yes&dur=145.519&lmt=1649562077179416&mt=1663240853&fvip=5&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=6211224&n=x87hJcu3ssrXdw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgGUSfEp_oiAu-0m39NCRaR5BdSBOWkJ_IUJJonJRZyZUCIHTWw7yXiFnshPispAbWD9qFNmljHbrRxlMJmAdnDAfN&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgNH8A7NGtlU0iEzsKOxMv0Q19XH7azkqVoIUAT7Svv5MCIQDcavHZZNp64kikdWUCxk5fkSXJQAt9_Ee_yaCY6w9yLQ%3D%3D&title=%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B5%D1%80%D1%8B%3A%20%D0%9C%D0%B5%D1%81%D1%82%D1%8C%20%D0%BF%D0%B0%D0%B4%D1%88%D0%B8%D1%85%20(2009)%20%20-%20%D0%A0%D0%B0%D0%B7%D1%80%D1%83%D1%88%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B0%D1%82%D0%B0%D0%BA%D0%B8%20(3%2F10)"
+              src="https://firebasestorage.googleapis.com/v0/b/my-movie-548bd.appspot.com/o/items%2F8b6a2215-14ed-48a8-9b8d-f0c1d6eb128d-Top%20Gun_%20Maverick%20-%20Official%20Trailer%20(2022)%20-%20Paramount%20Pictures.mp4?alt=media&token=871090d9-6d86-475e-9db1-012a20939679"
             ></video>
           </section>
 
