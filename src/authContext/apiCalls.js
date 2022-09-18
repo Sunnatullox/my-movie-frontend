@@ -5,19 +5,21 @@ import { loginFailure, loginStart, loginSuccess, userUpdateFailure, userUpdateSt
 export const login = async (user, dispatch, setLoginRes) => {
   dispatch(loginStart());
   try {
-    const res = await axios.post('https://my-movie-apis.herokuapp.com/api/auth/login', user)
+    const res = await axios.post('https://evening-hamlet-96260.herokuapp.com/api/auth/login', user)
      dispatch(loginSuccess(res.data))
   } catch (error) {
     dispatch(loginFailure());
-    return toast.error(error.response.data.msg)
+    error.response.data?.msg ? toast.error(error.response.data?.msg) : toast.error(error.response.data?.error) 
+    return 
+
   }
 };
 
-export const updateProfile = async (id, data,userData, dispatch) => {
+export const updateProfile = async (id, data, userData, dispatch) => {
   dispatch(userUpdateStart())
 try {
   const userProfileUpdate = await axios.put(
-    `https://my-movie-apis.herokuapp.com/api/users/${id}`,data,{
+    `https://evening-hamlet-96260.herokuapp.com/api/users/${id}`,data,{
       headers: {
         "Content-Type": "application/json",
         Authorization:

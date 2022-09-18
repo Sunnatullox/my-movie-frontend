@@ -10,7 +10,7 @@ const [content, setContent] = useState({})
 useEffect(() => {
   const getRandomContent =  async()=>{
     try {
-      const res = await axios.get(`https://my-movie-apis.herokuapp.com/api/movies/randam?type=${type}`,{
+      const res = await axios.get(`https://evening-hamlet-96260.herokuapp.com/api/movies/randam?type=${type}`,{
         headers: {
           Authorization:"Sunna " + JSON.parse(localStorage.getItem("user")).token,
         },
@@ -60,7 +60,7 @@ useEffect(() => {
         )}
         <span className="desc">{content.descr?.slice(0, 200)}. . .</span>
         <div className="buttons">
-            <Link   className="play" to={{pathname:"/watch", movie:content}}>
+            <Link className="play" to={`/watch/${content._id}`}>
             <PlayArrow />
               <span>
                 Play

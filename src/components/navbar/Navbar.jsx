@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../authContext/AuthContext";
 import { logoutStart } from "../../authContext/AuthAction";
 
-function Navbar({ user }) {
+function Navbar({ user, loginIn }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [searching, setSearching] = useState(false);
   const { dispatch } = useContext(AuthContext);
@@ -68,9 +68,18 @@ function Navbar({ user }) {
             </div>
           </>
         ) : (
+          <>
+          {loginIn ? (
+          <Link to="/register" className="loginbutton">
+            Sign Up
+          </Link>
+          ):(
           <Link to="/login" className="loginbutton">
             Sign In
           </Link>
+
+          )}
+          </>
         )}
       </div>
     </div>
