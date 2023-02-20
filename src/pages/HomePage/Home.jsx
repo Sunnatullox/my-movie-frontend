@@ -18,7 +18,7 @@ function Home({ types }) {
   const getRandom = async () => {
     try {
       const res = await axios.get(
-        `https://evening-hamlet-96260.herokuapp.com/api/lists${
+        `https://my-movie-api-67hl.onrender.com/api/lists${
           types ? "?type=" + types : ""
         }${genre ? "&genre=" + genre : ""}`,
         {
