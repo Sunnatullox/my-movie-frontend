@@ -5,7 +5,7 @@ import { loginFailure, loginStart, loginSuccess, userUpdateFailure, userUpdateSt
 export const login = async (user, dispatch, setLoginRes) => {
   dispatch(loginStart());
   try {
-    const res = await axios.post('https://evening-hamlet-96260.herokuapp.com/api/auth/login', user)
+    const res = await axios.post('https://my-movie-api-67hl.onrender.com/api/auth/login', user)
      dispatch(loginSuccess(res.data))
   } catch (error) {
     dispatch(loginFailure());
@@ -19,7 +19,7 @@ export const updateProfile = async (id, data, userData, dispatch) => {
   dispatch(userUpdateStart())
 try {
   const userProfileUpdate = await axios.put(
-    `https://evening-hamlet-96260.herokuapp.com/api/users/${id}`,data,{
+    `https://my-movie-api-67hl.onrender.com/api/users/${id}`,data,{
       headers: {
         "Content-Type": "application/json",
         Authorization:
