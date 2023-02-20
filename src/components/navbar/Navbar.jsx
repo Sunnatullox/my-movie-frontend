@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import { ArrowDropDown, Notifications, Search } from "@mui/icons-material";
 import "./navbar.scss";
 import AppLogo from "../../image/My_Movie-removebg-preview.png";
 import { Link } from "react-router-dom";

@@ -3,9 +3,9 @@ import "./listitem.scss";
 import {
   Add,
   PlayArrow,
-  ThumbDownAltOutlined,
-  ThumbUpAltOutlined,
-} from "@material-ui/icons";
+  ThumbDownAlt,
+  ThumbUpAlt,
+} from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../authContext/AuthContext";
 const axios = require("axios").default;
@@ -77,8 +77,8 @@ const ListItem = ({ index, item }) => {
               <div className="icons">
                 <PlayArrow className="icon" />
                 <Add className="icon" />
-                <ThumbUpAltOutlined className="icon" />
-                <ThumbDownAltOutlined className="icon" />
+                <ThumbUpAlt className="icon" />
+                <ThumbDownAlt className="icon" />
               </div>
               <div className="itemInfoTop">
                 <span>{movie.duration}</span>

@@ -11,7 +11,7 @@ import {
   BatteryChargingFull,
   OndemandVideo,
   Whatshot,
-} from "@material-ui/icons";
+} from "@mui/icons-material";
 
 const Register = () => {
   const [registerid, setRegisterid] = useState(false);

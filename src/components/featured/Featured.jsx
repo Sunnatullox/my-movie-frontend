@@ -1,4 +1,4 @@
-import { InfoOutlined, PlayArrow } from "@material-ui/icons";
+import { Info, PlayArrow } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./featured.scss";
@@ -67,7 +67,7 @@ useEffect(() => {
                 </span> 
                </Link>
           <Link to={{pathname:"/movieInfo", movieInfo:content}} className="more">
-            <InfoOutlined />
+            <Info />
             <span>Info</span>
           </Link>
         </div>

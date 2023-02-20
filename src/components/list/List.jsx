@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ListItem from "../listItem/ListItem";
 import {
-  ArrowBackIosOutlined,
-  ArrowForwardIosOutlined,
-} from "@material-ui/icons";
+  ArrowBackIos,
+  ArrowForwardIos,
+} from "@mui/icons-material";
 
 import "./list.scss";
 import { useRef } from "react";
@@ -32,7 +32,7 @@ const List = ({ list }) => {
     <div className="list">
       <span className="listTitle">{list.title}</span>
       <div className="wrapper">
-        <ArrowBackIosOutlined
+        <ArrowBackIos
           onClick={() => handelClick("left")}
           className="sliderArrow"
           style={{ display: !isMoved && "none" }}
@@ -42,7 +42,7 @@ const List = ({ list }) => {
             <ListItem index={i} key={i} item={item} />
           ))}
         </div>
-        <ArrowForwardIosOutlined
+        <ArrowForwardIos
           onClick={() => handelClick("right")}
           className="sliderArrow right"
         />

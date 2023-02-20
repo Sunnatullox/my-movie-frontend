@@ -1,4 +1,4 @@
-import { ArrowBackOutlined, PlayArrow, Videocam } from "@material-ui/icons";
+import { ArrowBackIos, PlayArrow, Videocam } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Spiner from "../../components/spiner/Spiner";
@@ -10,13 +10,15 @@ const Whatch = (props) => {
   const [movie, setMovie] = useState({});
   const [isLoading, setisLoading] = useState(true);
   const [watchTrailer, setWatchTrailer] = useState(false);
-  const userSubscribeDay = JSON.parse(localStorage.getItem("user")).user.userSubscribeDay;
+  const userSubscribeDay = JSON.parse(localStorage.getItem("user")).user
+    .userSubscribeDay;
 
   const movieId = props.match.params?.id;
 
   const hanleMovie = async () => {
     try {
-      const res = await axios.get(`https://my-movie-api-67hl.onrender.com/api/movies/find/${movieId}`,
+      const { data } = await axios.get(
+        `https://my-movie-api-67hl.onrender.com/api/movies/find/${movieId}`,
         {
           headers: {
             Authorization:
@@ -24,7 +26,7 @@ const Whatch = (props) => {
           },
         }
       );
-      setMovie(res.data.movie);
+      setMovie(data.movie);
     } catch (error) {
       console.log(error);
     }
@@ -51,7 +53,7 @@ const Whatch = (props) => {
             <div className="whatch">
               <Link to="/" className="link">
                 <div className="back">
-                  <ArrowBackOutlined />
+                  <ArrowBackIos />
                   Home
                 </div>
               </Link>
@@ -200,25 +202,25 @@ const Whatch = (props) => {
                     >
                       Trailer <Videocam className="icon" />
                     </button>
-                      <Link to={!userSubscribeDay && "/pricing"}>
-                    <button
-                      onClick={() => setWatchTrailer(true)}
-                      className="btn btn--green trailer"
-                    >
+                    <Link to={!userSubscribeDay && "/pricing"}>
+                      <button
+                        onClick={() => setWatchTrailer(true)}
+                        className="btn btn--green trailer"
+                      >
                         Watch Full Movie <PlayArrow className="icon" />
-                    </button>
-                      </Link>
+                      </button>
+                    </Link>
                     {watchTrailer ? (
                       <>
                         {userSubscribeDay !== "" && (
-                      <video
-                        className="video"
-                        src={movie.video}
-                        progress={movie.video?.toString()}
-                        controls
-                        /> 
+                          <video
+                            className="video"
+                            src={movie.video}
+                            progress={movie.video?.toString()}
+                            controls
+                          />
                         )}
-                        </>
+                      </>
                     ) : (
                       <video
                         className="video"

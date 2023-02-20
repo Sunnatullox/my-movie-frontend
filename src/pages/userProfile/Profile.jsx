@@ -1,6 +1,6 @@
 import React from "react";
 import "./profile.scss";
-import { AddCircleOutline, CameraAlt, Edit } from "@material-ui/icons";
+import { AddCircleOutline, CameraAlt, Edit } from "@mui/icons-material";
 import { useState } from "react";
 import { storage } from "../../firebase";
 import { toast, ToastContainer } from "react-toastify";

@@ -1,4 +1,4 @@
-import { Close, Done, MeetingRoom, Style, TabletMac } from "@material-ui/icons";
+import { Close, Done, MeetingRoom, Style, TabletMac } from "@mui/icons-material";
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../authContext/AuthContext";
 import Footer from "../footer/Footer";
