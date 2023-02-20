@@ -80,7 +80,7 @@ const Pricing = () => {
   const payNow = async (token) => {
     try {
       const res = await axios.post(
-        "https://evening-hamlet-96260.herokuapp.com/api/payment",
+        "https://my-movie-api-67hl.onrender.com/api/payment",
         {
           data: {
             platformTrafic,
