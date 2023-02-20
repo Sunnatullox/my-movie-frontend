@@ -20,7 +20,7 @@ const ListItem = ({ index, item }) => {
     async function getMovie() {
       try {
         const res = await axios.get(
-          "https://evening-hamlet-96260.herokuapp.com/api/movies/find/" + item,
+          "https://my-movie-api-67hl.onrender.com/api/movies/find/" + item,
           {
             headers: {
               Authorization:
