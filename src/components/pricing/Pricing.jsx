@@ -80,7 +80,7 @@ const Pricing = () => {
   const payNow = async (token) => {
     try {
       const res = await axios.post(
-        "https://my-movie-api-67hl.onrender.com/api/payment",
+        "https://movie-production-8d0e.up.railway.app/api/payment",
         {
           data: {
             platformTrafic,

@@ -35,7 +35,7 @@ const Register = () => {
     if (name && password && email) {
       try {
         const res = await axios.post(
-          "https://my-movie-api-67hl.onrender.com/api/auth/register",
+          "https://movie-production-8d0e.up.railway.app/api/auth/register",
           {
             email,
             name,

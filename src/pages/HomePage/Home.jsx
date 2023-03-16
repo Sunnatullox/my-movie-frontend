@@ -18,7 +18,7 @@ function Home({ types }) {
   const getRandom = async () => {
     try {
       const res = await axios.get(
-        `https://my-movie-api-67hl.onrender.com/api/lists${
+        `https://movie-production-8d0e.up.railway.app/api/lists${
           types ? "?type=" + types : ""
         }${genre ? "&genre=" + genre : ""}`,
         {

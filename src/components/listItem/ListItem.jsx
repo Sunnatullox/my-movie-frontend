@@ -20,7 +20,7 @@ const ListItem = ({ index, item }) => {
     async function getMovie() {
       try {
         const res = await axios.get(
-          "https://my-movie-api-67hl.onrender.com/api/movies/find/" + item,
+          "https://movie-production-8d0e.up.railway.app/api/movies/find/" + item,
           {
             headers: {
               Authorization:
