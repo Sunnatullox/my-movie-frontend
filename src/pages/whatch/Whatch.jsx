@@ -18,7 +18,7 @@ const Whatch = (props) => {
   const hanleMovie = async () => {
     try {
       const { data } = await axios.get(
-        `https://movie-production-8d0e.up.railway.app/api/movies/find/${movieId}`,
+        `https://my-movie-api-9l2o.onrender.com/api/movies/find/${movieId}`,
         {
           headers: {
             Authorization:

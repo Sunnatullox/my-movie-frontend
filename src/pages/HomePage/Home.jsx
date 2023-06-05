@@ -18,7 +18,7 @@ function Home({ types }) {
   const getRandom = async () => {
     try {
       const res = await axios.get(
-        `https://movie-production-8d0e.up.railway.app/api/lists${
+        `https://my-movie-api-9l2o.onrender.com/api/lists${
           types ? "?type=" + types : ""
         }${genre ? "&genre=" + genre : ""}`,
         {
@@ -36,7 +36,7 @@ function Home({ types }) {
   };
   useEffect(() => {
       getRandom();
-  }, [types, genre]);
+  }, []);
 
 
   setTimeout(() => {
